@@ -1,0 +1,212 @@
+% Calculus II Practice Exam
+% LaTeX source
+\documentclass[12pt]{article}
+
+% ---------- Packages ----------
+\usepackage[margin=0.75in]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{amsthm}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,urlcolor=blue}
+\usepackage{mdframed}
+
+% ---------- Headers ----------
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Math 1301- Vanderbilt- Fall 2025}
+\rhead{Math 1301 Practice Final Exam Version 2}
+\cfoot{\\}
+\usepackage{lastpage}
+
+% ---------- Commands ----------
+\newcommand{\points}[1]{\hfill{\small[\textbf{#1} pts]}}
+\newcommand{\blank}[1][2in]{\rule{#1}{0.4pt}}
+\newcommand{\ds}{\displaystyle}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=1.2em}
+\setlist[enumerate]{itemsep=0.6em}
+
+% ---------- Title Block ----------
+\begin{document}
+\begin{center}
+    \Large Math 1301 \quad Practice Final Exam Version 2 \\[1em]
+    \normalsize Vanderbilt University \\[1em]
+    8 December 2025
+\end{center}
+
+\vspace{2cm}
+
+\noindent \textbf{Name:} \rule{12cm}{0.4pt}
+
+\vfill
+
+\begin{center}
+\begin{minipage}{0.9\textwidth}
+\centering
+Please do not open the exam until instructed to do so. \\
+You are allowed a one-page (double-sided) formula sheet. \\
+Your instructor may ask to see your formula sheet. \\
+No calculators, phones, computers, smart watches, etc.\ are permitted.
+\end{minipage}
+\end{center}
+
+\vspace{1.5cm}
+
+\begin{center}
+The Vanderbilt Honor Code applies.
+\end{center}
+
+
+
+\newpage
+
+% ---------- Problems ----------
+\textbf{Part 1}. (\textit{20 points}) 
+\begin{enumerate}[label=\textbf{Q\arabic*}]
+    \item  $\displaystyle \frac{d}{dx}\left[\log_{9}(5^{\sin(e^{x})})+\cos^{-1}(\ln(\sqrt[50]{x}))\right]=\fbox{\raisebox{-0.4\height}{\makebox[11cm]{\rule{0pt}{8ex}}}}$
+    \vspace{3.5cm}
+    \item $\displaystyle\frac{d}{dx}\ln^{5^{x}}(x)=\fbox{\raisebox{-0.4\height}{\makebox[14cm]{\rule{0pt}{8ex}}}}$
+    \vspace{3.5cm}
+    \item $\displaystyle \lim_{x\to 0^{+}}\left(\frac{\sin(x)}{x}\right)^{1/x^{2}}=\fbox{\raisebox{-0.4\height}{\makebox[5cm]{\rule{0pt}{8ex}}}}$ 
+    \vspace{5.5cm}
+    \item The value of $k$ such that the equation $e^{2x}=k\sqrt{x}$ has \textit{one} solution is $\fbox{\raisebox{-0.4\height}{\makebox[4cm]{\rule{0pt}{8ex}}}}$
+\end{enumerate}
+
+\newpage
+
+\textbf{Part 2}. (\textit{10 points}) Consider the two power series given by 
+\[
+    J_{0}(x)=\sum_{n=0}^{\infty}\frac{(-1)^{n}x^{2n}}{2^{2n}(n!)^{2}} \quad \quad \text{and}\quad \quad  J_{1}(x)=\sum_{n=1}^{\infty}\frac{(-1)^{n}x^{2n+1}}{n!(n+1)!2^{2n+1}}
+\]
+These are called Bessel Functions of the first kind. 
+\begin{enumerate}[label=\textbf{Q\arabic*}]
+    \item Determine the radii of convergence of $J_{0}(x)$ and $J_{1}(x)$. 
+    \vspace{11cm} 
+    \item Show that $y(x)=J_{0}(x)$ solves the differential equation 
+    \[
+        x^{2}y''(x)+xy'(x)+x^{2}y(x)=0. 
+    \]
+\end{enumerate}
+
+
+\newpage
+
+\textbf{Part 3} (\textit{15 points}) Evaluate the following integrals.
+\begin{enumerate}[label=\textbf{Q\arabic*}]
+    \item  $\displaystyle \int_{0}^{1} \tan(\sin^{-1}(x))=\fbox{\raisebox{-0.4\height}{\makebox[11cm]{\rule{0pt}{8ex}}}}$ 
+    \vspace{6cm} 
+    \item $\displaystyle\int\sqrt{1-x^{2}} \ dx=\fbox{\raisebox{-0.4\height}{\makebox[11cm]{\rule{0pt}{8ex}}}}$
+    \vspace{6cm}
+    \item $\displaystyle \int\frac{\cot(x)}{\ln(\sin(x))} \ dx= \fbox{\raisebox{-0.4\height}{\makebox[11cm]{\rule{0pt}{8ex}}}}$
+\end{enumerate}
+
+\newpage
+
+\textbf{Part 4}. (\textit{15 points})
+\begin{enumerate}[label=\textbf{Q\arabic*}]
+    \item If $\displaystyle f(x)=\sum_{n=1}^{\infty}a_{n}x^{n}$, then $\displaystyle\sum_{n=1}^{\infty}n^{2}a_{n}x^{n}=$ $\fbox{\raisebox{-0.4\height}{\makebox[8cm]{\rule{0pt}{8ex}}}}$
+    \vspace{1.80in}
+    \item The values of $p$ and $q$ such that  $\displaystyle\sum_{n=3}^{\infty}\frac{1}{n^{p}\ln^{q}(n)}$ converges are $\fbox{\raisebox{-0.4\height}{\makebox[6cm]{\rule{0pt}{8ex}}}}$
+    \vspace{1.8in}
+    \item  Evaluate the following integral: $\displaystyle\int\frac{\ln(\ln(x))}{x}\ dx=$  $\fbox{\raisebox{-0.4\height}{\makebox[9cm]{\rule{0pt}{8ex}}}}$
+\end{enumerate}
+
+\newpage 
+
+\textbf{Part 5}. (\textit{15 points})  
+\begin{enumerate}[label=\textbf{Q\arabic*}]
+    \item Consider the parametric equations
+    \[
+        x(t)=e^{t}\cos(t) \quad y(t)=e^{t}\sin(t)
+    \]
+    Eliminate the parameter and find $\displaystyle\frac{dy}{dx}$ in terms of $t$. 
+    \vspace{6cm}
+    \item Find the length of the polar curve of $\displaystyle r=\frac{1}{\theta}$ from $0\leq \theta\leq 2\pi$ 
+    \vspace{5cm} 
+    \item Eliminate the parameter of the parametric equations $x=2\cos(\theta)$, $y=1+\sin(\theta)$. Find the points of the  horizontal and vertical tangent lines. 
+\end{enumerate}
+
+\newpage 
+
+\textbf{Part 6}. (\textit{10 points})
+\begin{enumerate}[label=\textbf{Q\arabic*}]
+    \item The general solution to $\displaystyle \frac{dy}{dx}=\frac{3^{x}y\left(\ln^{2}(y)+3\ln(y)+2\right)}{1+9^{x}}$ is $\fbox{\raisebox{-0.4\height}{\makebox[7cm]{\rule{0pt}{8ex}}}}$
+    \vspace{5.00in}
+    \item Use power series to evaluate: $\displaystyle \lim_{x\to 0}\frac{1-\cos(x)}{1+x-e^{x}}=\fbox{\raisebox{-0.4\height}{\makebox[4cm]{\rule{0pt}{8ex}}}}$
+\end{enumerate}
+
+\newpage
+
+\textbf{Part 7} (\textit{20 points}) Determine if the following series converge or diverge. Show your work and state any necessary hypotheses. 
+\begin{enumerate}[label=\textbf{Q\arabic*}]
+    \item $\displaystyle\sum_{n=0}^{\infty}\frac{1}{n\sqrt{n^{2}+1}}$
+    \vspace{3.5cm}
+    \item $\displaystyle \sum_{n=1}^{\infty}\frac{(n!)^{n}}{n^{4n}}$
+    \vspace{3.5cm}
+    \item $\displaystyle\sum_{n=1}^{\infty}(-1)^{n}\frac{x^{2}}{2^{x}}$ (Use the alternating series test)
+    \vspace{3.5cm}
+    \item $\displaystyle\sum_{n=1}^{\infty}\sin\left(\frac{n\pi}{6}\right)$
+    \end{enumerate}
+
+\newpage
+
+\textbf{Part 8} (\textit{20 points}) Define the function $\displaystyle f(x)=\int_{0}^{x}\frac{1}{(t+1)\sqrt{1-\ln^{2}(t+1)}}\ dt$
+
+\begin{enumerate}[label=\textbf{Q\arabic*}]
+    \item The domain of $\displaystyle f(x)$ is $\fbox{\raisebox{-0.4\height}{\makebox[8cm]{\rule{0pt}{8ex}}}}$
+    \vspace{4cm}
+    \item $f(x)$ has an inverse on $\fbox{\raisebox{-0.4\height}{\makebox[8cm]{\rule{0pt}{8ex}}}}$
+    \vspace{3cm}
+    \item $\displaystyle f\left(\sum_{n=1}^{\infty}\frac{(3)^{n/2}}{n! \ 2^{n}}\right)=\fbox{\raisebox{-0.4\height}{\makebox[3cm]{\rule{0pt}{8ex}}}}$
+    \vspace{3.5cm}
+    \item $\displaystyle (f^{-1})'(1/2)=\fbox{\raisebox{-0.4\height}{\makebox[3cm]{\rule{0pt}{8ex}}}}$
+\end{enumerate}
+
+\newpage
+
+\textbf{Part 9} (\textit{20 points}) Suppose that $y=f(x)$ is a solution to the differential equation 
+\[
+    \displaystyle \frac{dy}{dx}=yx\ln(x)+k\sin(x)
+\]
+where $k>0$ and $f(1)=4$. 
+\begin{enumerate}[label=\textbf{Q\arabic*}]
+    \item The second order Taylor polynomial of $f(x)$ at $x=1$ is given by $\fbox{\raisebox{-0.4\height}{\makebox[6cm]{\rule{0pt}{8ex}}}}$  
+    \vspace{5cm}
+    \item If $k=0$, then the solution to the initial value problem is given by $\fbox{\raisebox{-0.4\height}{\makebox[6cm]{\rule{0pt}{8ex}}}}$
+    \vspace{6cm}
+    \item The domain of $f(x)$ is $\fbox{\raisebox{-0.4\height}{\makebox[6cm]{\rule{0pt}{8ex}}}}$
+\end{enumerate}
+
+\newpage
+
+\textbf{Part 10} (\textit{25 points}) Define the function $g(x)=xe^{x}$. 
+\begin{enumerate}[label=\textbf{Q\arabic*}]
+    \item Calculate $\displaystyle\int_{0}^{1}g(x)\ dx$ in two ways: an integration techique and a power series technique.  
+    \vspace{3.0cm}
+    \item $y=g(x)$ satisfies the following differential equation $\displaystyle \fbox{\raisebox{-0.4\height}{\makebox[7cm]{\rule{0pt}{8ex}}}}$. 
+    \vspace{1.5cm}
+    \item The above differential equation is \textbf{SEPARABLE} or \textbf{NON-SEPARABLE}. 
+    \item The domain of $\displaystyle h(p)=\int_{1}^{\infty}\frac{g(x)}{e^{px}}\ dx$ is $\displaystyle \fbox{\raisebox{-0.4\height}{\makebox[5cm]{\rule{0pt}{8ex}}}}$. 
+    \vspace{2.5cm}
+    \item  $g(x)$ has an inverse on the domain $\displaystyle \fbox{\raisebox{-0.4\height}{\makebox[5cm]{\rule{0pt}{8ex}}}}$.
+    \vspace{2.5cm}
+    \item $\displaystyle\int_{0}^{e}g^{-1}(x)\ dx=$ $\displaystyle \fbox{\raisebox{-0.4\height}{\makebox[5cm]{\rule{0pt}{8ex}}}}$. (Hint: what is an inverse?)
+\end{enumerate}
+
+\newpage
+
+\textbf{Part 11} \textit{Extra space for work}
+
+
+% ---------- End ----------
+\vfill
+\centering\textit{End of Exam. Check your work!}
+
+\end{document}
